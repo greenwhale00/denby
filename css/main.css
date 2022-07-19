@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+
+* {
+    outline: 1px dashed .369;
+}
+
+
+body {
+    height: 500vh;
+}
+
+
+
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.header {
+    width: 1200px;
+    height: 114px;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+
+.top_logo {
+    display: block;
+    text-align: center;
+
+}
+
+.right_area {
+    margin: 0;
+    font-size: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.right_area .right_icon {
+    cursor: pointer;
+    height: 35px;
+}
+
+
+.right_area>div i {
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mainVisual {
+    position: relative;
+}
+
+.mainVisual .mainSlider figure {
+    position: relative;
+    height: 600px;
+
+}
+
+.mainVisual .mainSlider .itm01 {
+    background: url(../img/mainvisual01.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .mainSlider .itm02 {
+    background: url(../img/mainvisual02.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .mainSlider .itm03 {
+    background: url(../img/mainvisual03.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .mainSlider .inner {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+}
+
+/* .mainVisual .mainSlider .itm02 .inner {
+    color: #333;
+    text-shadow: 0 0 3px #fff;
+} */
+
+.mainVisual .mainSlider .inner h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.mainVisual .mainSlider .inner p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
+
+.mainVisual .mainSlider .inner a {
+    display: inline-block;
+    padding: 5px 20px;
+    background: #333;
+}
+
+.mainVisual .mainSlider figure h2 {
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.mainVisual .mainSlider figure.on h2 {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.mainVisual .mainSlider figure p {
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.mainVisual .mainSlider figure.on p {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s 0.5s;
+}
+
+.mainVisual .mainSlider figure a {
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.mainVisual .mainSlider figure.on a {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s 1s;
+}
+
+.mainVisual .mainSlider .slick-dots {
+    position: absolute;
+    inset: auto auto 100px 50%;
+    transform: translateX(-50%);
+}
+
+.mainVisual .mainSlider .slick-dots li {
+    display: inline-block;
+}
+
+.mainVisual .mainSlider .slick-dots button {
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    width: 22px;
+    height: 22px;
+    margin: 0 2px;
+}
+
+.mainVisual .mainSlider .slick-dots li.slick-active button {
+    background: #f00;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background: #FCFFFC;
+    color: #666;
+    font-size: 13px;
+    height: 250px;
+    text-align: center;
+}
+
+.zeroTop {
+    width: 1200px;
+
+    margin: 0 auto;
+    line-height: 50px;
+}
+
+.footer .zeroTop .logo_top {
+    margin: 0 0 30px 0;
+    padding: 50px 0 0 0;
+}
+
+.footer .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .top dt,
+.footer .top dd {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    justify-content: space-between;
+}
+
+.footer .top i {
+    font-size: 25px;
+}
+
+
+.footer .bottom address li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    font-style: normal;
+    line-height: 20px;
+}
+
+.footer .bottom address .copy {
+    font-style: normal;
+    line-height: 20px;
+}
+
+.footer .container {
+    justify-content: space-between;
+}
+
+.footer .sns i {
+    margin: 0 0 0 20px;
+}
+
+
+.toTop {
+    display: none;
+    position: fixed;
+    inset: auto 50px 50px auto;
+}
+
+.toTop img {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
