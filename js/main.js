@@ -16,13 +16,28 @@ $(function () {
     });
 
 
-    // $('.new_slide').slick({
-    //arrows: false,
-    //  autoplay: true,
-    //    dots: false,
-    //      pauseOnHover: false,
-    //        pauseOnFocus: false,
-    // });
+
+    $('.gnb>ul>li>a').on('click', function (event) {
+        if ($(window).width() < 769) {
+            event.preventDefault();
+            $('.smenu').slideUp()
+            $(this).next().stop().slideToggle();
+        }
+    });
+
+
+    $('.mbtn').on('click', function () {
+        $('.gnb').toggleClass('on')
+    });
+
+
+
+    $(window).on('resize', function () {
+        $('.gnb').removeClass('on');
+        $('.smenu').removeAttr('style')
+    });
 
 
 })
+
+
